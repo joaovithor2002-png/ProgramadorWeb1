@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="vetor.css"> 
+    <title>Vetores em JavaScript - Lista de Números</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Aula de Vetores em JavaScript</h1>
+        
+        <!-- Formulário -->
+        <div class="form-group">
+            <label for="valor">Digite um número:</label>
+            <input type="number" id="valor" placeholder="Ex: 10, 25, 37..." step="any">
+        </div>
+
+        <!-- Botões -->
+        <div class="button-group">
+            <button class="btn-adicionar" onclick="adicionarNumero()">➕ Adicionar (push)</button>
+            <button class="btn-remover" onclick="removerNumero()">➖ Remover (pop)</button>
+            <button class="btn-limpar" onclick="limparLista()">🗑️ Limpar</button>
+        </div>
+
+        <!-- Lista de valores -->
+        <div class="lista-container">
+            <div class="lista-titulo">📋 Valores no Vetor:</div>
+            <div id="listaValores">
+                <div class="vazio">Nenhum valor cadastrado</div>
+            </div>
+        </div>
+
+        <!-- Informações -->
+        <div class="info" id="info">
+            Total de elementos: 0
+        </div>
+    </div>
+
+   <script src="vetor.js"></script>
+</body>
+</html>
